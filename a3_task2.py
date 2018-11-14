@@ -235,9 +235,4 @@ for i, row in test_data_set.iterrows():
     print()
 
 
-#Need to find the accuracy by comparing the predicted test result vs the actual test result for 
-#Buy attribute.
-print('Test',test_actual_buy_results)
-
-
 
