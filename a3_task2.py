@@ -179,43 +179,43 @@ for i, row in test_data_set.iterrows():
     battery = battery_buy_prob[battery]
     cost = cost_buy_prob[cost]
 
-    manu_prob_yes = manufacturer['YES']/buy_yes_prob
-    manu_prob_no = manufacturer['NO']/buy_no_prob
+    manu_prob_yes = manufacturer['YES']
+    manu_prob_no = manufacturer['NO']
 
     '''print('\tP(manu, buy=\"yes\"), P(manu, buy=\"no\") ')
     print('\t',manu_prob_yes,'\t', manu_prob_no)
     print()'''
 
-    RAM_prob_yes = RAM['YES']/buy_yes_prob
-    RAM_prob_no = RAM['NO']/buy_no_prob
+    RAM_prob_yes = RAM['YES']
+    RAM_prob_no = RAM['NO']
 
     '''print('\tP(RAM, buy=\"yes\"), P(RAM, buy=\"no\") ')
     print('\t',RAM_prob_yes,'\t', RAM_prob_no)
     print()'''
 
-    capacity_prob_yes = capacity['YES']/buy_yes_prob
-    capacity_prob_no = capacity['NO']/buy_no_prob
+    capacity_prob_yes = capacity['YES']
+    capacity_prob_no = capacity['NO']
 
     '''print('\tP(capacity, buy=\"yes\"), P(capacity, buy=\"no\") ')
     print('\t',capacity_prob_yes,'\t', capacity_prob_no)
     print()'''
 
-    warranty_prob_yes = warranty['YES']/buy_yes_prob
-    warranty_prob_no = warranty['NO']/buy_no_prob
+    warranty_prob_yes = warranty['YES']
+    warranty_prob_no = warranty['NO']
 
     '''print('\tP(warranty, buy=\"yes\"), P(warranty, buy=\"no\") ')
     print('\t',warranty_prob_yes,'\t', warranty_prob_no)
     print()'''
 
-    battery_prob_yes = battery['YES']/buy_yes_prob
-    battery_prob_no = battery['NO']/buy_no_prob
+    battery_prob_yes = battery['YES']
+    battery_prob_no = battery['NO']
 
     '''print('\tP(battery, buy=\"yes\"), P(battery, buy=\"no\") ')
     print('\t',battery_prob_yes,'\t', battery_prob_no)
     print()'''
 
-    cost_prob_yes = cost['YES']/buy_yes_prob
-    cost_prob_no = cost['NO']/buy_no_prob
+    cost_prob_yes = cost['YES']
+    cost_prob_no = cost['NO']
 
     '''print('\tP(cost, buy=\"yes\"), P(cost, buy=\"no\") ')
     print('\t',cost_prob_yes,'\t', cost_prob_no)
