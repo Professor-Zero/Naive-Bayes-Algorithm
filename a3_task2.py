@@ -112,35 +112,35 @@ buy_yes_prob = buy_yes_prob/size1
 buy_no_prob = buy_no_prob/size1
 for key in manufac_buy_prob:
     tempDict = manufac_buy_prob[key]
-    tempDict['YES'] = tempDict['YES']/size1
-    tempDict['NO'] = tempDict['NO']/size1
+    tempDict['YES'] = (tempDict['YES']/size1)/buy_yes_prob
+    tempDict['NO'] = (tempDict['NO']/size1)/buy_no_prob
     
 for key in RAM_buy_prob:
     tempDict = RAM_buy_prob[key]
-    tempDict['YES'] = tempDict['YES']/size1
-    tempDict['NO'] = tempDict['NO']/size1
+    tempDict['YES'] = (tempDict['YES']/size1)/buy_yes_prob
+    tempDict['NO'] = (tempDict['NO']/size1)/buy_no_prob
 
 for key in capacity_buy_prob:
     tempDict = capacity_buy_prob[key]
-    tempDict['YES'] = tempDict['YES']/size1
-    tempDict['NO'] = tempDict['NO']/size1
+    tempDict['YES'] = (tempDict['YES']/size1)/buy_yes_prob
+    tempDict['NO'] = (tempDict['NO']/size1)/buy_no_prob
 
 for key in warranty_buy_prob:
     tempDict = warranty_buy_prob[key]
-    tempDict['YES'] = tempDict['YES']/size1
-    tempDict['NO'] = tempDict['NO']/size1
+    tempDict['YES'] = (tempDict['YES']/size1)/buy_yes_prob
+    tempDict['NO'] = (tempDict['NO']/size1)/buy_no_prob
 
 for key in battery_buy_prob:
     tempDict = battery_buy_prob[key]
-    tempDict['YES'] = tempDict['YES']/size1
-    tempDict['NO'] = tempDict['NO']/size1
+    tempDict['YES'] = (tempDict['YES']/size1)/buy_yes_prob
+    tempDict['NO'] = (tempDict['NO']/size1)/buy_no_prob
 
 for key in cost_buy_prob:
     tempDict = cost_buy_prob[key]
-    tempDict['YES'] = tempDict['YES']/size1
-    tempDict['NO'] = tempDict['NO']/size1
+    tempDict['YES'] = (tempDict['YES']/size1)/buy_yes_prob
+    tempDict['NO'] = (tempDict['NO']/size1)/buy_no_prob
 
-print('Manufacturer: ')
+'''print('Manufacturer: ')
 print('\t',manufac_buy_prob)
 print('RAM: ')
 print('\t',RAM_buy_prob)
@@ -153,7 +153,7 @@ print('\t',battery_buy_prob)
 print('Cost: ')
 print('\t',cost_buy_prob)
 print('Buy_yes, Buy_no: ')
-print(buy_yes_prob,'\t', buy_no_prob)
+print(buy_yes_prob,'\t', buy_no_prob)'''
     
 test_actual_buy_results = {}
 test_actual_buy_results['YES'] = 0
@@ -233,6 +233,11 @@ for i, row in test_data_set.iterrows():
     else:
         print('\tThis test X belongs to class Buy=\'no\'')
     print()
+
+
+#Need to find the accuracy by comparing the predicted test result vs the actual test result for 
+#Buy attribute.
+#print('Test',test_actual_buy_results)
 
 
 
